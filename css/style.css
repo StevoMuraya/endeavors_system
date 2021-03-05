@@ -326,6 +326,6 @@
     padding: 0.2rem;
 }
 
-.logo-mains span{
+.logo-mains span, .name-logo span{
     color: #9e4141;
 }
