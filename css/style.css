@@ -183,6 +183,10 @@
     flex-direction: column;
 }
 
+.left-slider::-webkit-scrollbar {
+    display: none;
+  }
+
 .left-slider {
     width: 20%;
     height: 100%;
@@ -191,12 +195,14 @@
     z-index: 4;
     position: fixed;
     padding: 7rem 0 0 0;
-    background-color: #292861;
+    background-color: #2b2b52;
     color: rgb(214, 214, 214);
-    box-shadow: 2px 2px 2px #363580;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.329);
     display: flex;
-    flex-direction: column;
     overflow: scroll;
+    flex-direction: column;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .left-list {
@@ -216,8 +222,10 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid #313070;
-    border-top: 1px solid #313070;
+}
+
+li.active{
+    background-color: #303061;
 }
 
 .left-link {
@@ -226,6 +234,7 @@
     color: #FFF;
     text-align: center;
     padding: 0.75rem 0;
+    font-weight: 700;
 }
 
 .support-options {
@@ -329,3 +338,23 @@
 .logo-mains span{
     color: #9e4141;
 }
+
+
+/* /////////////////// CLAIMS SECTION ///////////////////////// */
+
+.new-claim {
+    width: 100%;
+    display: flex;
+}
+
+.form-action2 {
+    width: 100%;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
